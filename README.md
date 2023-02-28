@@ -1,4 +1,4 @@
-# Space-Breakout-Game
+# UFO-Hunter
 
 Simple implementation of a breakout style game in p5.js.
 
