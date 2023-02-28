@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.2/lib/p5.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.2/lib/addons/p5.sound.min.js"></script>
+    <script src="sketch.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gideon+Roman&family=Roboto+Serif:ital,opsz@1,8..144&family=Roboto:wght@300&family=Silkscreen&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id = "container"> 
+      <div id="title"> <h1> Ufo Hunter </h1></div>
+
+      <div id="doc"> 
+        <h3> Introduction </h3>
+        <p>
+          Welcome! My name is Zaeem Shahzad. This my first ever game built in p5.js showcased on a website. This is one of those games where you can never get tired of playing. Have fun shooting UFOs and obsessing over your highscore. I decided to make this game to master using objects in JavaScript. It reminds me a lot of a game I used to play about spaceships when I was younger.
+        </p>
+        <h3> Design </h3>
+        <p>
+          I started with just making a basic game with no graphics to nail the mechanics of the game. Later, I customized it to make it more aesthetically pleasing. What you see here is the final product, a website styled for the game. I hope you enjoy it as much as I did making it. 
+        </p>
+      </div>
+
+      <div id="inst">
+        
+        <h2> Instructions </h2>
+
+        <div class = "content"> 
+          <img src = "assets/ship.png" width = "120">
+          <p> Arrow keys to move the spaceship and SpaceBar to shoot the UFOs. </p>
+        </div>
+        
+        <div class = "content">
+          <img src = "assets/rock.png" width = "100" height = "100">  
+          <p> Avoid the asteroids! </p>
+        </div>
+
+        <div class = "content">
+          <img src = "assets/ufo.png" width = "100">  
+          <p> Shoot the UFOs! 2 UFO Miss for Easy Mode, 1 for Medium, 0 for Hard allowed. </p>
+        </div>
+
+      </div>
+      
+      <div id="center"> 
+        <div id="controls">
+          <button id="play" onclick="hide();">Play Game</button>
+          <button id="pause" onclick="pause();">Pause</button>
+          <button id="resume" onclick="pause();">Resume</button>
+        </div>
+      </div>
+
+      <div id="rangeBar">
+        Spaceship Speed
+        <div>
+          <input type="range" id="r" min="0.1" max="0.6" step="0.05" value="0.2" oninput="changeAcc(this);"><br>
+        </div>
+      </div>
+
+    </div>
+    
+  </body>
+</html>
